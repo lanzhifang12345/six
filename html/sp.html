@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>商品详情</title>
+        <link rel="stylesheet" href="../css/sp.css">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="../css/iconfont5/iconfont.css">
+        <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+        <link rel="stylesheet" href="../css/tmallrecommend.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/nav1.css">
+    </head>
+    <body>
+       <!-- 顶部导航栏开始 -->
+      <nav class="index-nav">
+        <div class="nav-center">
+          <p class="p1"><a href="../index.html">首页</a></p>
+          <a href="">请登录</a>
+          <a href="">免费注册</a>
+          <ul class="index-uls" id="navuls">
+            <li class="tb">
+              <a href="" class="wdtb">我的淘宝</a>
+              <span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+            </li>
+            <li>
+              <a href="">
+                <span class="iconfont icon-gouwuche" id="gwc"></span>购物车0件
+              </a>
+            </li>
+            <li>
+              <a href="" class="scj">收藏夹</a>
+              <span class="iconfont icon-sanjiaoxing " id="sjx"></span>&nbsp;|
+            </li>
+            <li>
+              <span class="iconfont icon-shouji" id="sj"></span>
+              <a href="">手机版</a>
+            </li>
+            <li><a href="">淘宝网</a></li>
+            <li>
+              <a href="" class="sjzc">商家支持</a>
+              <span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+            </li>
+            <li class="wzdh">
+              <p>
+                <span class="iconfont icon-shouqi1" id="sq"></span>网站导航
+              </p>
+            </li>
+          </ul>
+          <div class="nav-div" id="navdiv">
+            <div>
+              <li><a href="">已买到的宝贝</a></li>
+              <li><a href="">已卖出的宝贝</a></li>
+            </div>
+            <div></div>
+            <div>
+              <li><a href="">收藏的宝贝</a></li>
+              <li><a href="">收藏的店铺</a></li>
+            </div>
+            <div class="sjb-erweima">
+              <img src="img/shoujiban_erweima.png" alt="">
+            </div>
+            <div></div>
+            <div>
+              <li><a href="">收藏的宝贝</a></li>
+              <li><a href="">收藏的店铺</a></li>
+            </div>
+            <div>dddddddddddddd</div>
+          </div>
+        </div>
+      </nav>
+      <!-- 顶部导航栏结束 -->
+      <!--  <div class="box"></div> -->
+       <div class="d1">
+          <div class="d11">
+          	<a href="" id="a1" title='天猫Tmall.com'>TMALL天猫</a>
+          </div>
+          <div class="d12">
+          	<a href="" id="a2">韩都衣舍旗舰店</a>
+          	<span id="s1">品牌直销</span>
+          </div>
+          <div class="d13">
+          	<h4 id="h1">描 述 服 务 物 流</h4>
+          	<h4 id="h2">4.8- 4.8↑ 4.8↑</h4>
+          </div>
+       	  <div class="d14">手机逛</div>
+       	  <div class="d15">
+       	  	<input type="text" placeholder=' iPhone11预购' id="ipt1">
+       	  	<button id="btn1">搜天猫</button>
+       	  	<button id="btn2">搜本店</button>
+       	  </div>
+       </div>
+       <hr>
+       <div class="d2">
+       	 <div class="d21">
+       	    <div class="d22">互联网品牌生态运营集团</div>
+       	 	<ul class="uls1">
+	       		<li><a href="" id="a3" title="韩风快时尚女装">HSTYLE女装</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">HSTYLE男装</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">HSTYLE童装</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">范奎恩</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">迪葵纳</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">素缕</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">imvely</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">LF海外</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">spelledit</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">佩极</a></li>
+	       		<li><a href="" id="a3" title="韩风快时尚女装">热浪</a></li>
+	       		<li id="li1">+</li>
+       	    </ul>
+       	 </div>
+       </div>
+       <div class="d3">
+       	 <div class="d31">
+       	 	<a href=""><img src="../img/pde1.png" alt="" id="img1"></a>
+       	 	<p id="p1">没空去韩国？就来韩都衣舍！</p>
+       	 </div>
+       	 <div class="d32">
+       	 	<div class="d33">
+       	 		<div class="d34">
+       	 			<p id="p2">韩风快时尚领军品牌 连续7年行业销量第一 *</p>
+       	 			<span id="s2">每日上新100款&nbsp;|&nbsp;全网粉丝6000万&nbsp;|&nbsp;累计销量突破2亿件</span><br>
+       	 			<span id="s3">* 数据来源于2012-2018年生意参谋统计</span>
+       	 		</div>
+       	 		<div class="d35">
+       	 			<input type="text" id="ipt2">
+       	 		</div>
+       	 	</div>
+       	 	<div class="d36">
+       	 		<ul class="uls2">
+       	 			<li><a href="" id="a4">首页</a></li>
+       	 			<li><a href="" id="a4">全部分类</a></li>
+       	 			<li><a href="" id="a4">每周一新品</a></li>
+       	 			<li><a href="" id="a4">明星同款</a></li>
+       	 			<li><a href="" id="a4">IP联名系列</a></li>
+       	 			<li><a href="" id="a4">裤装</a></li>
+       	 			<li><a href="" id="a4">裙装</a></li>
+       	 			<li><a href="" id="a4">卫衣</a></li>
+       	 			<li><a href="" id="a4">外套</a></li>
+       	 			<li><a href="" id="a4">会员制度</a></li>
+       	 			<li><a href="" id="a4">+BOOK MARK</a></li>
+       	 		</ul>
+       	 	</div>
+       	 </div>
+       </div>
+       <div class="d4">
+       	<div class="d41">
+       		<div class="d44">
+       			<div class="d46"><video src="../img/v1.mp4" id="v1" autoplay></video></div>
+       			<div class="d47">
+       				<ul class="uls4">
+       				<li id="li1"><img src="../img/pde5.jpg" alt=""></li>
+       				<li id="li1"><img src="../img/pde6.jpg" alt=""></li>
+       				<li id="li1"><img src="../img/pde7.jpg" alt=""></li>
+       				<li id="li1"><img src="../img/pde8.jpg" alt=""></li>
+       				<li id="li1"><img src="../img/pde9.jpg" alt=""></li>
+       			</ul>
+       			</div>
+       			<p id="p4">
+       				<a href="" id="a5">★收藏商品</a>
+       				<span id="s6">（49286人气）</span>
+       				<a href="" id="a6">举报</a>
+       			</p>
+       		</div>
+       		<div class="d45">
+       			<div class="d48">
+       				<h1 id="h3">韩都衣舍2019秋季新款韩版女装宽松bf长袖上衣摇粒绒卫衣女潮ins</h1>
+       				<span id="s7">多色选择&nbsp;圆领套头&nbsp;卡通刺绣图案</span>
+       			</div>
+       			<div class="d49">
+       				<p id="p5">&nbsp;价格<span id="s8">￥158.00</span></p>
+       				<p id="p5">&nbsp;促销价<span id="s9">￥</span><span id="s10">136.00</span><em id="e1">优惠促销</em></p>
+       				<p id="p7">&nbsp;本店活动<span id="s11">满2件，包邮</span><p id="p6">更多优惠∨</p></p>
+       			</div>
+       			<div class="d50">
+       			    <div class="d51">运费</div>
+       			    <div class="d52">
+       			    	<span>山东济南&nbsp;至&nbsp;</span>
+       			    	<span id="s12">广州∨</span>
+       			    	<span>&nbsp;快递：12.00</span>
+       			    </div>
+       			</div>
+       			<div class="d53">
+       				<ul class="uls5">
+       					<li id="li2">月销量<span id="s13">&nbsp;1.5万+</span></li>
+       					<li id="li2">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;累计评价<span id="s13">&nbsp;2819</span><span id="s15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></li>
+       					<li id="li2">送天猫积分<span id="s14">&nbsp;68</span></li>
+       				</ul>
+       			</div>
+       			<div class="d54">
+       				<div class="d55">尺码</div>
+       				<ul class="uls6">
+       					<li id="li2">XS</li>
+       					<li id="li1">S</li>
+       					<li id="li1">M</li>
+       					<li id="li1">L</li>
+       					<li id="li1">XL</li>
+       				</ul>
+       			</div>
+       			<div class="d56">
+       				<div class="d57">颜色分类</div>
+       				<ul class="uls7">
+       					<li id="li2"><img src="../img/pde11.jpg" alt=""></li>
+       					<li id="li1"><img src="../img/pde11.jpg" alt=""></li>
+       					<li id="li1"><img src="../img/pde11.jpg" alt=""></li>
+       					<li id="li1"><img src="../img/pde11.jpg" alt=""></li>
+       					<li id="li1"><img src="../img/pde11.jpg" alt=""></li>
+       					<li id="li1"><img src="../img/pde11.jpg" alt=""></li>
+       				</ul>
+       			</div>
+       			<div class="d58">
+       				<div class="d59">数量</div>
+       				<input type="text" id="ipt1" placeholder=" 1">
+       				<div class="d60">
+       					<span id="s1">∧</span>
+       					<span id="s1">∨</span>
+       				</div>
+       				<span id="s2">件</span>
+       				<span id="s2">库存27568件</span>
+       			</div>
+       			<div class="d61">
+       				<div class="d62">花呗分期</div>
+       				<span class="iconfont icon-gantanhao" id="s1"></span>
+       				<a href="" id="a1">&nbsp;登录</a>
+       				<span id="s2">后确认是否享有该服务</span>
+       				<a href="" id="a2">什么是花呗分期</a>
+       			</div>
+       			<div class="d63">
+       				<div class="d64 d65">￥46.37X3期（含手续费）</div>
+       				<div class="d64">￥23.68X6期（含手续费）</div>
+       				<div class="d64">￥12.18X12期（含手续费）</div>
+       			</div>
+       			<div class="d66">
+       				<div class="d67 d68" title="点击此按钮，到下一步确认购买信息。">立即购买</div>
+       				<div class="d67"><span class="iconfont icon-tubiao-" id="s1"></span>加入购物车</div>
+       			</div>
+       			<div class="d69">
+       				<div class="d70">服务承诺</div>
+       				<ul class="uls1">
+       					<li id="li1" title="商品支持正品保障服务">正品保证</li>
+       					<li id="li1">1分钱超值洗衣</li>
+       					<li id="li1">极速退款</li>
+       					<li id="li1">支付方式∨</li>
+       				</ul>
+       				<div class="d71">七天无理由退款</div>
+       			</div>
+       		</div>
+       	</div>
+       	<div class="d42">
+       		<p id="p3">......看了又看......</p>
+       		<ul class="uls3">
+       			<li><a href=""><img src="../img/pde2.jpg" alt=""></a><p id="p4">￥438.00</p></li>
+       			<li><a href=""><img src="../img/pde3.jpg" alt=""></a><p id="p4">￥268.00</p></li>
+       			<li><a href=""><img src="../img/pde4.jpg" alt=""></a><p id="p4">￥208.00</p></li>
+       		</ul>
+       		<span class="iconfont icon-ai-arrow-down" id="s4" ></span>
+       		<span class="iconfont icon-jiantoushang"  id="s5"></span>
+       	</div>
+       </div>
+
+       <!-- 商品详情 -->
+       <div class="product_details_d5">
+       	  <div class="product_details_left">
+       	    <!-- 第一个框 -->
+       	  	<div class="head">
+       	  		<div class="head_d1">
+       	  			<h3><a href="">韩都衣舍旗舰店</a></h3>
+       	  			<p></p>
+       	  		</div>
+       	  		<div class="head_d2">
+						<p id="p1"><a href="a">原</a></p>
+						<span id="s1">天猫原创官方认证</span><br>
+						<p id="p2"><a href="">11</a></p>
+						<p id="p3">&nbsp;&nbsp;天猫11年店</p>
+						<div class="d2-main">
+							<p>描述&nbsp;&nbsp;服务&nbsp;&nbsp;物流</p>
+							<h4>4.8-&nbsp;&nbsp;4.8↑&nbsp;&nbsp;4.8↑</h4>
+				        </div>
+                </div>
+				<div class="head_d3">
+       	  		       <div class="left">进店逛逛</div>
+       	  			   <div class="right">收藏店铺</div>
+       	  	    </div>
+       	  	</div>
+
+
+
+       	  	<div class="middle">
+       	  		<h4>本店搜索</h4>
+       	  		<span id="s1">&nbsp;&nbsp;&nbsp;关键字</span>
+       	  		<input type="text" id="ipt1" placeholder=" T恤">
+       	  		<p id="p7">&nbsp;&nbsp;&nbsp;价&nbsp;&nbsp;&nbsp;格</p>
+       	  		<input type="text">
+       	  		<input type="text">
+       	  		<div class="middle_buttom">
+       	  			<span class="iconfont icon-sousuo s1"></span>
+       	  		</div>
+       	  	</div>
+       	  	<div class="bottom">
+       	  		<div>
+       	  			<img src="../img/product details_middle.gif" alt="">
+       	  		</div>
+       	  		<ul class="uls8">
+       	  			<li>售前<img src="../img/product details.gif" alt=""></li>
+       	  			<li>售前<img src="../img/product details.gif" alt=""></li>
+       	  			<li>售前<img src="../img/product details.gif" alt=""></li>
+       	  			<li>售前<img src="../img/product details.gif" alt=""></li>
+       	  			<li>售前<img src="../img/product details.gif" alt=""></li>
+       	  		</ul>
+       	  	</div>
+
+       	  	<div class="left_middle">
+       	  		<img src="../img/pde_34.jpg" alt="">
+       	  		<a href=""><img src="../img/pde_35.jpg" alt=""></a>
+       	  		<p><a href="">裙装<br><i>Dress</i></a></p>
+       	  		<a href=""><img src="../img/pde_35.jpg" alt=""></a>
+       	  		<p><a href="">裤装<br><i>Pants</i></a></p>
+       	  		<a href=""><img src="../img/pde_35.jpg" alt=""></a>
+       	  		<p><a href="">卫衣<br><i>Sweater</i></a></p>
+
+       	  		<ul class="left_middle_bottom"> 
+       	  			<li><a href="">衬衫</a></li>
+       	  			<li><a href="">卫衣</a></li>
+       	  			<li><a href="">风衣/外套</a></li>
+       	  		</ul>
+       	  	</div>
+
+       	  	<div class="left_bottom">
+       	  		<div class="left_bottom_d1">
+       	  			<a href=""><img src="../img/pde_36.jpg" alt=""></a>
+       	  			<div>
+       	  				<span id="left_bottom_s1">￥128.00</span>
+       	  				<span id="left_bottom_s2">￥278.00</span>
+       	  			</div>
+       	  			<a href="" id="left_bottom_a1">韩都衣舍2019秋装新款韩版女装上衣潮ins长袖bf慵懒薄款宽松卫衣</a>
+       	  		</div>
+       	  	</div>
+
+       	  </div>
+
+
+          <!-- 中部 -->
+       	  <div class="product_details_middle">
+       	  	<div class="middle_header">
+       	  		<div class="middle_header_d1">
+       	  			<ul class="uls9">
+       	  				<li>商品详情</li>
+       	  				<li>商品详情</li>
+       	  				<li id="li1">商品详情</li>
+       	  			</ul>
+       	  		</div>
+       	  		<div class="middle_header_d2">品牌名称：HSTYLE/韩都衣舍</div>
+       	  		<p class="p1">产品参数：</p>
+       	  		<ul class="uls10">
+       	  			<li>品牌: HSTYLE/韩都衣舍</li>
+       	  			<li>适用年龄: 18-24周岁</li>
+       	  			<li>尺码: XS S M L XL</li>
+       	  			<li>图案: 卡通动漫</li>
+       	  			<li>领子: 圆领</li>
+       	  			<li>风格: 通勤</li>
+       	  			<li>通勤: 韩版</li>
+       	  			<li>颜色分类: 红色 菠萝黄色 奶油白色 海军蓝</li>
+       	  			<li>袖型: 常规</li>
+       	  			<li>组合形式: 单件</li>
+       	  			<li>货号: LU8607</li>
+       	  			<li>年份季节: 2019年秋季</li>
+       	  			<li>袖长: 长袖</li>
+       	  			<li>款式: 套头</li>
+       	  			<li>厚薄: 加绒</li>
+       	  			<li>衣长: 常规</li>
+       	  			<li>服装版型: 宽松</li>
+       	  			<li>服装款式细节: 绣花</li>
+       	  			<li>销售渠道类型: 纯电商(只在线上销售)</li>
+       	  			<li>材质成分: 聚酯纤维100%</li>
+       	  		</ul>
+       	  	</div>
+       	  
+       	  	<dl>
+	       	  	<dt><img src="../img/pde_1.jpg" alt=""></dt>
+	       	  	<dd><a href="">韩都衣舍首席好看官<br>娜扎</a></dd>
+       	    </dl>
+
+       	    <dl>
+	       	  	<dt><img src="../img/pde_2.jpg" alt=""></dt>
+	       	  	<dd><a href="">任泉 李冰冰 黄晓明<br>三大明星入股韩都衣舍</a></dd>
+       	    </dl>
+
+
+       	    <div class="middle_main">
+       	    	<img src="../img/pde_7.png" alt="">
+       	    	<ul class="uls11">
+       	    		<li id="main_li1"><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img1"></a></li>
+       	    	</ul>
+
+       	    	<ul class="uls12">
+       	    		<li id="main_li2"><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    	</ul>
+
+       	    	<ul class="uls13">
+       	    		<li id="main_li3"><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    	</ul>
+
+       	    	<ul class="uls12">
+       	    		<li id="main_li2"><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img2"></a></li>
+       	    	</ul>
+
+       	    	<ul class="uls13">
+       	    		<li id="main_li3"><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    		<li><a href=""><img src="../img/pde_3.png" alt="" id="middle_main_img3"></a></li>
+       	    	</ul>
+                
+                <img src="../img/pde_8.jpg" alt="" id="middle_main_img4">
+                <img src="../img/pde_9.jpg" alt="" id="middle_main_img5">
+                <img src="../img/pde_10.jpg" alt="" id="middle_main_img6">
+                <img src="../img/pde_11.jpg" alt="" id="middle_main_img7">
+                <img src="../img/pde_12.jpg" alt="" id="middle_main_img8">
+                <img src="../img/pde_13.jpg" alt="" id="middle_main_img9">
+                <ul class="uls14">
+                	<li><a href=""><img src="../img/pde_14.jpg" alt="" id="middle_main_img10"></a></li>
+                	<li><a href=""><img src="../img/pde_15.jpg" alt="" id="middle_main_img101"></a></li>
+                	<li><img src="../img/pde_16.jpg" alt="" id="middle_main_img102"></li>
+                </ul>
+                <ul class="uls15">
+                	<li><a href=""><img src="../img/pde_17.jpg" alt="" id="middle_main_img11"></a></li>
+                	<li><img src="../img/pde_18.jpg" alt="" id="middle_main_img111"></li>
+                	<li><img src="../img/pde_19.jpg" alt="" id="middle_main_img112"></li>
+                </ul>
+                <img src="../img/pde_20.jpg" alt="" id="middle_main_img12">
+                <img src="../img/pde_21.jpg" alt="" id="middle_main_img13">
+                <img src="../img/pde_22.jpg" alt="" id="middle_main_img14">
+                <img src="../img/pde_23.jpg" alt="" id="middle_main_img15">
+                <img src="../img/pde_24.jpg" alt="" id="middle_main_img16">
+                <img src="../img/pde_25.jpg" alt="" id="middle_main_img17">
+                <img src="../img/pde_26.jpg" alt="" id="middle_main_img18">
+                <img src="../img/pde_27.jpg" alt="" id="middle_main_img19">
+                <!-- <img src="../img/pde_28.jpg" alt="" id="middle_main_img20"> -->
+                <img src="../img/pde_31.jpg" alt="" id="middle_main_img20">
+                <img src="../img/pde_32.jpg" alt="" id="middle_main_img21">
+                <img src="../img/pde_33.png" alt="" id="middle_main_img22">
+
+                <div class="middle_evaluate">
+                	<div class="middle_evaluate_head">
+                		<p><span>累计评价 3067</span></p>
+	                	<div>
+	                		<div class="evaluate_middle">
+	                			<span id="evaluate_s1">与描述相符</span><br>
+	                			<span id="evaluate_s2">4.8</span><br>
+	                			<span id="evaluate_s3">☆☆☆☆☆</span>
+	                		</div>
+	                		<ul class="evaluate_uls">
+	                			<li id="evaluate_li1">整体不错（220）</li>
+	                			<li id="evaluate_li1">很舒服（194）</li>
+	                			<li id="evaluate_li1">便宜（149）</li>
+	                			<li id="evaluate_li1">版型好（114）</li>
+	                			<li id="evaluate_li1">颜色很好（119 </li>
+	                			<li id="evaluate_li1">穿着美（109）</li>
+	                		</ul>
+	                	</div>
+	                	<div class="evaluate_bottom">
+	                		<input type="checkbox" id="ipt7"><label for="">&nbsp;&nbsp;全部</label>
+	                		<input type="checkbox"><label for="">&nbsp;&nbsp;追评（35）</label>
+	                		<input type="checkbox"><label for="">&nbsp;&nbsp;图片（282）</label>
+	                		<input type="checkbox"><label for="">&nbsp;&nbsp;有内容</label>
+	                		<span id="bottom_s1">按默认∨</span>
+	                	</div>
+                	</div>
+                	<div class="evaluate">
+                		<p>试穿了一下，很显白，个人很喜欢黄色，厚薄适中，天再冷了穿刚刚好，摇粒绒暖和。在韩都<br>衣舍买过衣服质量不错，这次的也很满意，活动价便宜穿上超级显瘦，</p>
+                	</div>
+                	<ul class="evaluate_uls">
+                		<li id="uls1"><img src="../img/pde_37.jpg" alt=""></li>
+                		<li id="uls1"><img src="../img/pde_37.jpg" alt=""></li>
+                		<li id="uls1"><img src="../img/pde_37.jpg" alt=""></li>
+                		<li id="uls1"><img src="../img/pde_37.jpg" alt=""></li>
+                	</ul>
+
+                </div>
+                <div class="evaluate_last">
+                	下一页
+                </div>
+                <img src="../img/pde_38.jpg" alt="" class="last_img">
+
+
+
+       	    </div>
+       	  </div>
+       	  
+       	  <!-- 右边 -->
+       	  <div class="product_details_right"></div>
+       </div>
+      <!-- Tmall recommend 开始 -->
+      <!-- <div class="index-tmall-recommend">
+            <div class="tmall-ensure">
+                  <div class="ensure-center">
+                        <a href="">
+                              <div class="ensure-img">
+                                    <img src="img/you_meitu_1.jpg" alt="">
+                              </div>
+                              <dt>品质保障</dt>
+                              <dd>品质护航 购物无忧</dd>
+                        </a>
+                        <a href="">
+                              <div class="ensure-img">
+                                    <img src="img/qi_meitu_1.jpg" alt="">
+                              </div>
+                              <dt>七天无理由退货</dt>
+                              <dd>为您提供售后无忧保障</dd></a>
+                        <a href="">
+                              <div class="ensure-img">
+                                    <img src="img/te_meitu_1.jpg" alt="">
+                              </div>
+                              <dt>特殊服务体验</dt>
+                              <dd>为您呈现不一样的服务</dd>
+                        </a>
+                        <a href="">
+                              <div class="ensure-img">
+                                    <img src="img/bang_meitu_1.jpg" alt="">
+                              </div>
+                              <dt>帮助中心</dt>
+                              <dd>您的购物指南</dd>
+                        </a>
+                  </div>
+            </div>
+            <div class="tmall-desc">
+                  <div class="desc-center">
+                        <dl>
+                              <dt>
+                                    购物指南
+                                    <dd>
+                                          免费注册
+                                    </dd>
+                                    <dd>
+                                          开通支付宝
+                                    </dd>
+                                    <dd>
+                                          支付宝充值
+                                    </dd>
+                              </dt>
+                        </dl>
+                        <dl>
+                              <dt>
+                                    天猫保障
+                                    <dd>
+                                          发票保障
+                                    </dd>
+                                    <dd>
+                                          售后规则
+                                    </dd>
+                                    <dd>
+                                          缺货赔款
+                                    </dd>
+                              </dt>
+                        </dl>
+                        <dl>
+                              <dt>
+                                    支付方式
+                                    <dd>
+                                          快捷支付
+                                    </dd>
+                                    <dd>
+                                          信用卡
+                                    </dd>
+                                    <dd>
+                                          余额宝
+                                    </dd>
+                                    <dd>
+                                          蚂蚁花呗
+                                    </dd>
+                                    <dd>
+                                          货到付款
+                                    </dd>
+                              </dt>
+                        </dl>
+                        <dl>
+                              <dt>
+                                    商家服务
+                                    <dd>
+                                          天猫规则
+                                    </dd>
+                                    <dd>
+                                          商家入驻
+                                    </dd>
+                                    <dd>
+                                          商家中心
+                                    </dd>
+                                    <dd>
+                                          天猫智库
+                                    </dd>
+                                    <dd>
+                                          物流服务
+                                    </dd>
+                                    <dd>
+                                          喵言喵语
+                                    </dd>
+                                    <dd>
+                                          运营服务
+                                    </dd>
+                              </dt>
+                        </dl>
+                        <dl>
+                              <dt>
+                                    手机天猫
+                                    <dd class="erweima">
+                                          <img src="img/tmall_erweima_meitu_1.jpg" alt="">
+                                    </dd>
+                              </dt>
+                        </dl>
+                  </div>
+            </div>
+      </div> -->
+      <!-- Tmall recommend 结束 -->
+
+      <!-- footer 开始 -->
+      <!-- <footer class="index-footer">
+            <div class="footer-center">
+                  <p class="ft-p1">
+                        <a href="">关于天猫</a>
+                        <a href="">帮助中心</a>
+                        <a href="">开放平台</a>
+                        <a href="">诚聘英才</a>
+                        <a href="">联系我们</a>
+                        <a href="">网站合作</a>
+                        <a href="">法律声明</a>
+                        <a href="">隐私权政策</a>
+                        <a href="">知识产权</a>
+                        <a href="">廉政举报</a>
+                        <a href="">规则意见征集</a>
+                  </p>
+                  <p class="ft-p2">
+                        <a href="">阿里巴巴集团</a><span>|</span>
+                        <a href="">淘宝网 </a><span>|</span>
+                        <a href="">天猫 </a><span>|</span>
+                        <a href="">聚划算 </a><span>|</span>
+                        <a href="">全球速卖通 </a><span>|</span>
+                        <a href="">阿里巴巴国际交易市场 </a><span>|</span>
+                        <a href="">1688 </a><span>|</span>
+                        <a href="">阿里妈妈 </a><span>|</span>
+                        <a href="">飞猪 </a><span>|</span>
+                        <a href="">阿里云计算 </a><span>|</span>
+                        <a href="">AliOS </a><span>|</span>
+                        <a href="">阿里通信 </a><span>|</span>
+                        <a href="">万网 </a><span>|</span>
+                        <a href="">高德 </a><span>|</span>
+                        <a href="">UC </a><span>|</span>
+                        <a href="">友盟 </a><span>|</span>
+                        <a href="">虾米 </a><span>|</span>
+                        <a href="">钉钉 </a><span>|</span>
+                        <a href="">支付宝</a>
+                  </p>
+                  <div class="ft-div">
+                        增值电信业务经营许可证:
+                        <a href="">浙B2-20110446</a>
+                        <span class="ft-sp1">市场名称登记证：工商网市字3301004119</span>
+                        <span class="ft-sp2">出版物网络平台服务经营备案证：新出发浙备字第001号</span>
+                        <br>
+                        <span class="ft-sp3">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                        <span class="ft-sp4">互联网药品信息服务资质证书：<a href="">浙-（经营性）-2017-0005</a></span>
+                        <span class="ft-sp5">
+                              <a href="">
+                                    <img src="img/index_zhegongwanganbei.png" alt="">
+                                    浙公网安备 33010002000120号
+                              </a>
+                        </span>
+                        <br>
+                        <span class="ft-sp6">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                        <span class="ft-sp7">互联网药品交易服务资格证书：国A20150001</span>
+                        <br>
+                        <span class="ft-sp8">浙江省网络食品销售第三方平台提供者备案：浙网食33010002</span>
+                        <span class="ft-sp9"><a href="" class="jb-a">12318举报</a></span>
+                        <br>
+                        <span><b>© 2003-2019 TMALL.COM 版权所有</b></span>
+                        <p class="ft-p3">
+                              <a href="">
+                                    <img src="img/index_zhejiang.gif" alt="">
+                                    <img src="img/index_jingyingxukezheng.jpg" alt="">
+                              </a>
+                        </p>
+                  </div>
+            </div>
+      </footer> -->
+      <!-- footer 结束-->
+      
+
+    </body>
+</html>

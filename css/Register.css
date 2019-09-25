@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+header {
+	width: 1349px;
+	height: 50px;
+}
+header .header-center{
+	width: 1000px;
+	margin: 0 auto;
+}
+header .header-center div{
+	float: left;
+	width: 200px;
+	height: 50px;
+	border-bottom: 1px solid #e6e6e6;
+}
+header .header-center div{
+	float: left;
+}
+header .header-center div .num{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	background: #cccccc;
+	font-style: 30px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 35px;
+}
+
+header .header-center div p{
+	float: left;
+	font-style: 18px;
+	font-weight: bold;
+	color: #cccccc;
+	line-height: 50px;
+	margin-left: 5px;
+}
+.header-center .div_1{
+	margin-left: 100px;
+	border-bottom: 2px solid #ff0036;
+	z-index: 2;
+}
+.header-center hr{
+	width: 1000px;
+	color: #e6e6e6;
+	position: absolute;
+	margin-top: 50px;
+	z-index: -1;
+}
+.section-content {
+	width: 800px;
+	height: 480px;
+	border: 2px solid #dedede;
+	box-sizing: border-box;
+	margin-top: 70px;
+	margin-left: 275px;
+	position: relative;
+}
+.section-content h3{
+	font-size: 16px;
+	color: #3e3e3e;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.section-content span{
+	position: absolute;
+	right: 25px;
+	top: 18px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ff0036;
+}
+.section-content span:hover{
+	cursor: pointer;
+}
+.section-content p{
+	font-size: 12px;
+	margin-left: 40px;
+	line-height: 26px;
+}
+.section-content p a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #ff0036;
+}
+.section-content p a:hover{
+	text-decoration: underline;
+}
+
+.section-content button{
+	position:absolute;
+	width: 180px;
+	height: 36px;
+	margin-top: 10px;
+	margin-left: 310px;
+	border-radius: 3px;
+	background: #ff0036;
+	border: 1px solid #ff0036;
+	color: white;
+}
+.section-content button:hover{
+	cursor: pointer;
+}
+.tanchu{
+	width: 150px;
+	height: 250px;
+	background: white;
+	position: fixed;
+	margin-top: -215px;
+	margin-left: 940px;
+	border: 1px solid #f7931e;
+	border-radius: 18px;
+	padding: 5px 10px;
+}
+.tanchu .delete2{
+	font-size: 14px;
+	color: #ff0036;
+	float: right;
+}
+.tanchu .delete2:hover{
+	cursor: pointer;
+}
+.tanchu p{
+	font-size: 14px;
+	margin-top: 5px;
+}

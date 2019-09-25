@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>收藏夹</title>
+        <link rel="stylesheet" href="../css/sc.css">
+        <link rel="stylesheet" href="../css/fav.css">
+        <link rel="stylesheet" href="../css/header_1.css">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script src="../js/index-lunbo.js"></script>
+        <script src="../js/index-xlssl.js"></script>
+        <link rel="stylesheet" href="../css/iconfont5/iconfont.css">
+        <link rel="stylesheet" href="../css/footer_fav.css">
+        <!-- 底部轮播图 -->
+        <script>
+             $(function(){
+               var num=0;
+               var timer;
+               function go(){
+                    timer=setInterval(function(){
+                         num++;
+                         if(num>2){
+                              num=0;
+                              $('.bd_uls').css('margin-left',-740*num+'px');
+                              num=1;
+                         }
+                         $('.bd_uls').animate({'margin-left':-740*num+'px'}, 500)
+                    },2000)
+               }
+               go();
+
+               var timer2;
+               var sum=0;
+               function go2(){
+                    timer2=setInterval(function(){
+                         sum++;
+                         if(sum>4)
+                         {
+                              sum=0;
+                              $('.m_i7').css('margin-left',-1222*sum+'px');
+
+                         }
+
+                         $('.m_i7').animate({
+                              'margin-left':-1210*sum+'px'
+                         }, 3000)
+                    })
+               }
+               go2();
+             })
+        </script>
+          
+    </head>
+    <body>
+     <!-- 顶部导航栏开始 -->
+     <nav class="index-nav">
+          <div class="nav-center">
+               <p class="p1"><a href="../index.html">首页</a></p>
+               <a href="">请登录</a>
+               <a href="">免费注册</a>
+               <ul class="index-uls" id="navuls">
+                    <li class="tb">
+                         <a href="" class="wdtb">我的淘宝</a>
+                         <span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+                    </li>
+                    <li>
+                         <a href="">
+                              <span class="iconfont icon-gouwuche" id="gwc"></span>购物车0件
+                         </a>
+                    </li>
+                    <li>
+                         <a href="" class="scj">收藏夹</a>
+                         <span class="iconfont icon-sanjiaoxing " id="sjx">&nbsp;&nbsp;&nbsp;|</span>
+                    </li>
+                    <li>
+                         <span class="iconfont icon-shouji" id="sj"></span>
+                         <a href="html/TmallPhoneVersion.html">手机版</a>
+                    </li>
+                    <li><a href="">淘宝网</a></li>
+                    <li>
+                         <a href="" class="sjzc">商家支持</a>
+                         <span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+                    </li>
+                    <li class="wzdh">
+                         <p>
+                              <span class="iconfont icon-shouqi1" id="sq"></span>网站导航
+                         </p>
+                    </li>
+               </ul>
+               <div class="nav-div" id="navdiv">
+                    <div class="nav_div_1">
+                         <li class="li_1"><a href="">已买到的宝贝</a></li>
+                         <li><a href="">已卖出的宝贝</a></li>
+                    </div>
+                    <div></div>
+                    <div class="nav_div_2">
+                         <li class="li_2"><a href="">收藏的宝贝</a></li>
+                         <li><a href="">收藏的店铺</a></li>
+                    </div>
+                    <div class="nav_div_3">
+                         <div><img src="../img/shoujiban_erweima.png" alt=""></div>
+                    </div>
+                    <div></div>
+                    <div class="nav_div_4">
+                         <li class="li_4"><a href="">商家：</a></li>
+                         <li>
+                              <a href="">商家中心</a>
+                              <a href="">天猫规则</a>
+                         </li>
+                         <li>
+                              <a href="">商家入驻</a>
+                              <a href="">运营服务</a>
+                         </li>
+                         <li>
+                              <a href="">商家品控</a>
+                              <a href="">商家工具</a>
+                         </li>
+                         <li>
+                              <a href="">天猫智库</a>
+                              <a href="">喵言喵语</a>
+                         </li>
+                         <li class="li_line">
+                              .........................................
+                         </li>
+                         <li class="help">
+                              <a href="">帮助：</a>
+                         </li>
+                         <li>
+                              <a href="">帮助中心</a>
+                              <a href="">问商友</a>
+                         </li>
+                         <li class="li_line">
+                              .........................................
+                         </li>
+                    </div>
+                    <div class="nav_div_5">
+                         <div class="div_5_left">
+                                   <h2>热点推荐 Hot</h2>
+                                   <ul>
+                                        <li>天猫超市</li>
+                                        <li>喵鲜生</li>
+                                        <li>科技产品</li>
+                                        <li>女装新品</li>
+                                        <li>酷玩街</li>
+                                        <li>内衣新品</li>
+                                        <li>试美妆</li>
+                                        <li>运动新品</li>
+                                        <li>时尚先生</li>
+                                        <li>精明妈咪</li>
+                                        <li>吃乐会</li>
+                                        <li>企业采购</li>
+                                        <li>会员积分</li>
+                                        <li>天猫国际</li>
+                                        <li>品质频道</li>
+                                   </ul>
+                         </div>
+                         <div class="div_5_mid">
+                              <h2>行业市场 Market</h2>
+                              <ul>
+                                   <li>美妆</li>
+                                   <li>电器</li>
+                                   <li>女装</li>
+                                   <li>男装</li>
+                                   <li>女鞋</li>
+                                   <li>男鞋</li>
+                                   <li>内衣</li>
+                                   <li>箱包</li>
+                                   <li>运动</li>
+                                   <li>母婴</li>
+                                   <li>家装</li>
+                                   <li>医药</li>
+                                   <li>食品</li>
+                                   <li>配饰</li>
+                                   <li>汽车</li>
+                              </ul>
+                         </div>
+                         <div class="div_5_right">
+                              <h2>服务指南 Help</h2>
+                              <ul>
+                                   <li>帮助中心</li>
+                                   <li>品质保障</li>
+                                   <li>特殊服务</li>
+                                   <li>7天退换货</li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </nav>
+     <!-- 顶部导航栏结束 -->
+     <div class="fav_top">
+     	<div class="top_body">
+     		<a href=""><img src="../img/fav_1.png" alt=""></a>
+     		<a href="" id="t_b_a1">宝贝收藏</a>
+     		<a href="" id="t_b_a2">店铺收藏</a>
+     		<input type="text">
+     		<button>搜 索</button>
+     	</div>
+     </div>
+
+     <div class="fav_main">
+
+     	<div class="main_h">
+     		<div class="h_t">
+     			<ul class="uls">
+     				<li id="uls_li1"><span>全部宝贝21</span></li>
+     				<li id="uls_li2"><a href="">失效7</a></li>
+     				<li id="uls_li3"><a href="">同店宝贝</a></li>
+     			</ul>
+     			<div class="t_d1">
+     				<span>批量管理</span>
+     			</div>
+     			<input type="text" placeholder="&nbsp;宝贝搜索">
+     			<button><span class="iconfont icon-sousuo"></span></button>
+     			<div class="t_d2">
+     				<div class="t_d21">
+                           <span class="iconfont icon-liebiao1"></span>                
+                         </div>
+     				<div class="t_d22">
+                          <a href=""><span class="iconfont icon-liebiao"></span></a>           
+                         </div>
+     			</div>
+     		</div>
+
+     		<div class="h_b">
+     			<div class="hb_d1">
+                         <a href=""><img src="../img/fav_2.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">小米旅行箱男女20寸万向轮24寸拉杆箱28寸行李箱学生密码箱子</a>
+                         </div>
+                         <div class="b_d2">￥399.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_4.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">韩都衣舍2019秋季新款韩版女装宽松bf长袖上衣摇粒绒卫衣女潮ins</a>
+                         </div>
+                         <div class="b_d2">￥136.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_12.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">【三只松鼠_手撕面包1kg/整箱】早餐营养食品全麦蛋糕小吃糕点</a>
+                         </div>
+                         <div class="b_d2">￥29.90</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_13.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">Skechers斯凯奇情侣鞋女鞋校园小白鞋休闲鞋运动鞋熊猫鞋88888105</a>
+                         </div>
+                         <div class="b_d2">￥549.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_14.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">至本舒颜修护洁面乳120g氨基酸洗面奶男女士温和清洁保湿绵密泡沫</a>
+                         </div>
+                         <div class="b_d2">￥55.00</div>            
+                    </div>
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_15.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">图唯迷你充电宝超薄大容量可爱小巧便携移动电源快充闪充小米苹果vivo华为oppo手机专用无线石墨烯女创意个性</a>
+                         </div>
+                         <div class="b_d2">￥29.00</div>            
+                    </div>
+                    <div class="hb_d7">
+                         <a href=""><img src="../img/fav_16.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">雪兮2017春装新款日系软萌少女蝴蝶结白色衬衫娃娃领学生打底衬衣</a>
+                         </div>
+                         <div class="b_d2">￥49.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_17.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <!-- <img src="../img/fav_3.png" alt="" id="b_img1"> -->
+                             <a href="" id="b_a1">银星淘手持小风扇迷你可充电便携式手拿电风扇usb学生 随身静音</a>
+                         </div>
+                         <div class="b_d2">￥49.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_18.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">UR2019夏季新品女装优雅纽扣饰方领牛仔衬衫WH22SBME2002</a>
+                         </div>
+                         <div class="b_d2">￥199.00</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_19.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">三金桂林西瓜霜3.5g 喷雾粉咽痛口舌生疮 急慢性咽炎口腔溃疡喷剂</a>
+                         </div>
+                         <div class="b_d2">￥13.60</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_21.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <!-- <img src="../img/fav_3.png" alt="" id="b_img1"> -->
+                             <a href="" id="b_a1">456寸柯达塑封定制打印照片冲印包邮冲洗手机100张照片送相册</a>
+                         </div>
+                         <div class="b_d2">￥3.50</div>            
+                    </div>
+
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_20.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">卡姿兰官方旗舰店美芯口红女学生款杨树林唇膏豆沙色姨妈色小辣椒</a>
+                         </div>
+                         <div class="b_d2">￥98.00</div>            
+                    </div>
+                    <div class="hb_d1">
+                         <a href=""><img src="../img/fav_22.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_3.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">ZARA 新款 童包女童 樱桃装饰藤条斜挎包 11013006020</a>
+                         </div>
+                         <div class="b_d2">￥169.00</div>            
+                    </div>
+                    <div class="hb_d7">
+                         <a href=""><img src="../img/fav_23.jpg" alt="" id="b_img"></a>
+                         <div class="b_d1">
+                              <img src="../img/fav_24.png" alt="" id="b_img1">
+                             <a href="" id="b_a1">小米旅行箱男女20寸万向轮24寸拉杆箱28寸行李箱学生密码箱子</a>
+                         </div>
+                         <div class="b_d2">￥109.00</div>            
+                    </div>
+
+
+     		</div>
+
+     	</div>
+
+
+     	<div class="main_m">
+     		<div class="m_d1">
+     			<a href="">
+     				<h3>热卖单品</h3>
+     			</a>
+     			<ul class="m_uls1">
+     				<li id="m_li1"><a href="">洁面乳&nbsp;&nbsp;|</a></li>
+     				<li><a href="">洗面奶&nbsp;&nbsp;|</a></li>
+     				<li><a href="">洁面&nbsp;&nbsp;|</a></li>
+     				<li><a href="">速干衣&nbsp;&nbsp;|</a></li>
+                         <li><a href="">t恤女&nbsp;&nbsp;|</a></li>
+                         <li><a href="">女卫衣&nbsp;&nbsp;|</a></li>
+                         <li><a href="">连衣裙&nbsp;&nbsp;|</a></li>
+                         <li><a href="">沙发&nbsp;&nbsp;|</a></li>
+                         <li><a href="">窗帘&nbsp;&nbsp;|</a></li>
+                         <li><a href="">零食&nbsp;&nbsp;|</a></li>
+                         <li><a href="">床垫&nbsp;&nbsp;|</a></li>
+                         <li><a href="">茶几&nbsp;&nbsp;|</a></li>
+                         <li><a href="">耳机&nbsp;&nbsp;|</a></li>
+                         <li><a href="">风扇&nbsp;&nbsp;|</a></li>
+                         <li><a href="">电脑椅&nbsp;&nbsp;|</a></li>
+                         <li><a href="" id="m_a1">更多&nbsp;&nbsp;</a></li>
+     			</ul>
+     		</div>
+
+               <div class="m_d2">
+                    <div class="m_i7">
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b4.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥278.00</span>
+                                   <span id="m_s2">￥300.00</span>
+                              </div>
+                            <div class="m_a">
+                                   <a href="" id="m_a1">日本freeplus芙丽芳丝进口净润洗面霜氨基酸</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>直营专享价</div>
+                                   <span>销量：2671</span>
+                              </div>
+                              <div class="m_t">买了很多东西,都非常满意,我会常来的~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b5.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥269.10</span>
+                                   <span id="m_s2">￥1024.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">小香风套装女洋气羊毛呢短外套半身裙两件套</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>促销活动</div>
+                                   <span>销量：278</span>
+                              </div>
+                              <div class="m_t">中国好宝贝,走过路过不要错过咯~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b7.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥69.90</span>
+                                   <span id="m_s2">￥179.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">稚优泉哑光口红持久保湿高颜值少女</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>抢购价</div>
+                                   <span>销量：177926</span>
+                              </div>
+                         <div class="m_t">很好的卖家,谢谢喽.我的同事们都很喜欢!</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b8.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥39.90</span>
+                              <span id="m_s2">￥120.00</span>
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">氨基酸洗面奶女孩专用控油祛痘学生款美白补</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <div>狂欢返场</div>
+                              <span>销量：4923</span>
+                         </div>
+                         <div class="m_t">康忙北鼻,这些都是我给你选的~好羞羞~</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b9.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥799.00</span>
+                              <!-- <span id="m_s2">￥120.00</span> -->
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">Nb男鞋专业跑步鞋mw880pppp3网面稳定缓震</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <!-- <div>狂欢返场</div> -->
+                              <span>销量：353</span>
+                         </div>
+                         <div class="m_t">有生之年能碰到老板这个店,够幸福的...</div>
+                    </div>
+                    <div class="m_d21">
+                              <a href=""><img src="../img/fav_b10.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥278.00</span>
+                                   <span id="m_s2">￥300.00</span>
+                              </div>
+                            <div class="m_a">
+                                   <a href="" id="m_a1">日本freeplus芙丽芳丝进口净润洗面霜氨基酸</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>直营专享价</div>
+                                   <span>销量：2671</span>
+                              </div>
+                              <div class="m_t">买了很多东西,都非常满意,我会常来的~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b11.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥269.10</span>
+                                   <span id="m_s2">￥1024.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">小香风套装女洋气羊毛呢短外套半身裙两件套</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b12.png" alt=""></a>
+                                   <div>促销活动</div>
+                                   <span>销量：278</span>
+                              </div>
+                              <div class="m_t">中国好宝贝,走过路过不要错过咯~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b13.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥69.90</span>
+                                   <span id="m_s2">￥179.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">稚优泉哑光口红持久保湿高颜值少女</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>抢购价</div>
+                                   <span>销量：177926</span>
+                              </div>
+                         <div class="m_t">很好的卖家,谢谢喽.我的同事们都很喜欢!</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b14.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥39.90</span>
+                              <span id="m_s2">￥120.00</span>
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">氨基酸洗面奶女孩专用控油祛痘学生款美白补</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <div>狂欢返场</div>
+                              <span>销量：4923</span>
+                         </div>
+                         <div class="m_t">康忙北鼻,这些都是我给你选的~好羞羞~</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b15.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥799.00</span>
+                              <!-- <span id="m_s2">￥120.00</span> -->
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">Nb男鞋专业跑步鞋mw880pppp3网面稳定缓震</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <!-- <div>狂欢返场</div> -->
+                              <span>销量：353</span>
+                         </div>
+                         <div class="m_t">有生之年能碰到老板这个店,够幸福的...</div>
+                    </div>
+                    <div class="m_d21">
+                              <a href=""><img src="../img/fav_b16.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥278.00</span>
+                                   <span id="m_s2">￥300.00</span>
+                              </div>
+                            <div class="m_a">
+                                   <a href="" id="m_a1">日本freeplus芙丽芳丝进口净润洗面霜氨基酸</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>直营专享价</div>
+                                   <span>销量：2671</span>
+                              </div>
+                              <div class="m_t">买了很多东西,都非常满意,我会常来的~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b18.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥269.10</span>
+                                   <span id="m_s2">￥1024.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">小香风套装女洋气羊毛呢短外套半身裙两件套</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>促销活动</div>
+                                   <span>销量：278</span>
+                              </div>
+                              <div class="m_t">中国好宝贝,走过路过不要错过咯~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b19.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥69.90</span>
+                                   <span id="m_s2">￥179.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">稚优泉哑光口红持久保湿高颜值少女</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>抢购价</div>
+                                   <span>销量：177926</span>
+                              </div>
+                         <div class="m_t">很好的卖家,谢谢喽.我的同事们都很喜欢!</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b20.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥39.90</span>
+                              <span id="m_s2">￥120.00</span>
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">氨基酸洗面奶女孩专用控油祛痘学生款美白补</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <div>狂欢返场</div>
+                              <span>销量：4923</span>
+                         </div>
+                         <div class="m_t">康忙北鼻,这些都是我给你选的~好羞羞~</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b21.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥799.00</span>
+                              <!-- <span id="m_s2">￥120.00</span> -->
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">Nb男鞋专业跑步鞋mw880pppp3网面稳定缓震</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <!-- <div>狂欢返场</div> -->
+                              <span>销量：353</span>
+                         </div>
+                         <div class="m_t">有生之年能碰到老板这个店,够幸福的...</div>
+                    </div>
+                    <div class="m_d21">
+                              <a href=""><img src="../img/fav_b22.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥278.00</span>
+                                   <span id="m_s2">￥300.00</span>
+                              </div>
+                            <div class="m_a">
+                                   <a href="" id="m_a1">日本freeplus芙丽芳丝进口净润洗面霜氨基酸</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>直营专享价</div>
+                                   <span>销量：2671</span>
+                              </div>
+                              <div class="m_t">买了很多东西,都非常满意,我会常来的~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b23.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥269.10</span>
+                                   <span id="m_s2">￥1024.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">小香风套装女洋气羊毛呢短外套半身裙两件套</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>促销活动</div>
+                                   <span>销量：278</span>
+                              </div>
+                              <div class="m_t">中国好宝贝,走过路过不要错过咯~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b24.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥69.90</span>
+                                   <span id="m_s2">￥179.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">稚优泉哑光口红持久保湿高颜值少女</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>抢购价</div>
+                                   <span>销量：177926</span>
+                              </div>
+                         <div class="m_t">很好的卖家,谢谢喽.我的同事们都很喜欢!</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b25.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥39.90</span>
+                              <span id="m_s2">￥120.00</span>
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">氨基酸洗面奶女孩专用控油祛痘学生款美白补</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <div>狂欢返场</div>
+                              <span>销量：4923</span>
+                         </div>
+                         <div class="m_t">康忙北鼻,这些都是我给你选的~好羞羞~</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b26.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥799.00</span>
+                              <!-- <span id="m_s2">￥120.00</span> -->
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">Nb男鞋专业跑步鞋mw880pppp3网面稳定缓震</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <!-- <div>狂欢返场</div> -->
+                              <span>销量：353</span>
+                         </div>
+                         <div class="m_t">有生之年能碰到老板这个店,够幸福的...</div>
+                    </div>
+                    <div class="m_d21">
+                              <a href=""><img src="../img/fav_b27.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥278.00</span>
+                                   <span id="m_s2">￥300.00</span>
+                              </div>
+                            <div class="m_a">
+                                   <a href="" id="m_a1">日本freeplus芙丽芳丝进口净润洗面霜氨基酸</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>直营专享价</div>
+                                   <span>销量：2671</span>
+                              </div>
+                              <div class="m_t">买了很多东西,都非常满意,我会常来的~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b28.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥269.10</span>
+                                   <span id="m_s2">￥1024.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">小香风套装女洋气羊毛呢短外套半身裙两件套</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>促销活动</div>
+                                   <span>销量：278</span>
+                              </div>
+                              <div class="m_t">中国好宝贝,走过路过不要错过咯~~</div>
+                         </div>
+                         <div class="m_d21">
+                              <a href=""><img src="../img/fav_b29.jpg" alt=""></a>
+                              <div>
+                                   <span id="m_s1">￥69.90</span>
+                                   <span id="m_s2">￥179.00</span>
+                              </div>
+                              <div class="m_a">
+                                   <a href="" id="m_a1">稚优泉哑光口红持久保湿高颜值少女</a>
+                              </div>
+                              <div class="m_i">
+                                   <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                                   <div>抢购价</div>
+                                   <span>销量：177926</span>
+                              </div>
+                         <div class="m_t">很好的卖家,谢谢喽.我的同事们都很喜欢!</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b30.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥39.90</span>
+                              <span id="m_s2">￥120.00</span>
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">氨基酸洗面奶女孩专用控油祛痘学生款美白补</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <div>狂欢返场</div>
+                              <span>销量：4923</span>
+                         </div>
+                         <div class="m_t">康忙北鼻,这些都是我给你选的~好羞羞~</div>
+                    </div>
+                    <div class="m_d21">
+                         <a href=""><img src="../img/fav_b31.jpg" alt=""></a>
+                         <div>
+                              <span id="m_s1">￥799.00</span>
+                              <!-- <span id="m_s2">￥120.00</span> -->
+                         </div>
+                         <div class="m_a">
+                              <a href="" id="m_a1">Nb男鞋专业跑步鞋mw880pppp3网面稳定缓震</a>
+                         </div>
+                         <div class="m_i">
+                              <a href=""><img src="../img/fav_b17.png" alt=""></a>
+                              <!-- <div>狂欢返场</div> -->
+                              <span>销量：353</span>
+                         </div>
+                         <div class="m_t">有生之年能碰到老板这个店,够幸福的...</div>
+                    </div>
+                    </div>
+                    <div class="m_d22">
+                         <ol class="m_ol">
+                              <li class="selected"></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                         </ol>
+                         <div class="d_s"><span class="iconfont icon-jiantou_zuo"></span></div>
+                         <div class="d_s"><span class="iconfont icon-jiantou_you"></span></div>
+                         <div class="m_d"><a href="">换一组</a></div>
+                    </div>
+               </div>
+     	</div>
+
+     	<div class="main_b">
+     		<div class="b_d1">
+     			<div class="b_t1">猜你喜欢&nbsp;&nbsp;|</div>
+		 		<div class="b_t2">淘宝发现</div>
+		 		<hr>
+		 		<div class="b_t3">根据你最近浏览推荐</div>
+     		</div>
+     		<div class="b_d2">
+     			<div class="b_i1">
+     				<img src="../img/fav_7.jpg" alt="">
+     				<hr>
+     				<div class="b_i11">￥89</div>
+     				<hr>
+     				<div class="b_i12">
+     					<a href="">美国EltaMD进口温和氨基酸泡沫洗面奶清洁毛孔卸妆清爽补水男女</a>
+     				</div>
+     				<span><a href="">月销 94211</a></span><br>
+     				<a href="">根据你浏览的"洁面"推荐</a>
+     			</div>
+
+     			<div class="b_i1">
+     				<img src="../img/fav_8.jpg" alt="">
+     				<hr>
+     				<div class="b_i11">￥28.8</div>
+     				<hr>
+     				<div class="b_i12">
+     					<a href="">abd吐司面包营养早餐手撕全麦夹心糕点蛋糕零食食品整箱面包点心</a>
+     				</div>
+     				<span><a href="">月销 250411</a></span><br>
+     				<a href="">根据你浏览的"西式糕点"推荐</a>
+     			</div>
+
+     			<div class="b_i1">
+     				<img src="../img/fav_9.jpg" alt="">
+     				<hr>
+     				<div class="b_i11">￥25.9</div>
+     				<hr>
+     				<div class="b_i12">
+     					<a href="" title="【三只松鼠_足迹面包750g/整箱】手撕面包营养早餐零食充饥夜宵">【三只松鼠_足迹面包750g/整箱】手撕面包营养早餐零食充饥夜宵</a>
+     				</div>
+     				<span><a href="">月销 32321</a></span><br>
+     				<a href="">根据你浏览的"西式糕点"推荐</a>
+     			</div>
+
+     			<div class="b_i1">
+     				<img src="../img/fav_10.jpg" alt="">
+     				<hr>
+     				<div class="b_i11">￥170</div>
+     				<hr>
+     				<div class="b_i12">
+     					<a href="">【限时包邮】MAC/魅可经典子弹头唇膏 哑光口红Ruby Woo/小辣椒</a>
+     				</div>
+     				<span><a href="">月销 103730</a></span><br>
+     				<a href="">根据你浏览的"唇膏/口红"推荐</a>
+     			</div>
+     			<div class="b_i1">
+     				<img src="../img/fav_11.jpg" alt="">
+     				<hr>
+     				<div class="b_i11">￥58</div>
+     				<hr>
+     				<div class="b_i12">
+     					<a href="">Roundshop | 自制 让你每天想搭配的短袖  时髦短版露脐T恤三色</a>
+     				</div>
+     				<span><a href="">月销 267</a></span><br>
+     				<a href="">根据你浏览的"T恤"推荐</a>
+     			</div>
+                    <div class="fav_bd">
+                         <ul class="bd_uls">
+                              <li><img src="../img/fav_b1.jpg" alt=""></li>
+                              <li><img src="../img/fav_b2.jpg" alt=""></li>
+                              <li><img src="../img/fav_b3.jpg" alt=""></li>
+                         </ul>
+                    </div>
+     		</div>
+     	</div>
+     </div>
+      <div class="foolter">
+          <div class="hr">
+               <hr width="1192" size="1" color="gray" align="center">
+          </div>
+            <!-- footer 开始 -->
+          <footer class="index-footer">
+               <div class="footer-center">
+                    <p class="ft-p1">
+                         <a href="">关于天猫</a>
+                         <a href="">帮助中心</a>
+                         <a href="">开放平台</a>
+                         <a href="">诚聘英才</a>
+                         <a href="">联系我们</a>
+                         <a href="">网站合作</a>
+                         <a href="">法律声明</a>
+                         <a href="">隐私权政策</a>
+                         <a href="">知识产权</a>
+                         <a href="">廉政举报</a>
+                         <a href="">规则意见征集</a>
+                    </p>
+                    <p class="ft-p2">
+                         <a href="">阿里巴巴集团</a><span>|</span>
+                         <a href="">淘宝网 </a><span>|</span>
+                         <a href="">天猫 </a><span>|</span>
+                         <a href="">聚划算 </a><span>|</span>
+                         <a href="">全球速卖通 </a><span>|</span>
+                         <a href="">阿里巴巴国际交易市场 </a><span>|</span>
+                         <a href="">1688 </a><span>|</span>
+                         <a href="">阿里妈妈 </a><span>|</span>
+                         <a href="">飞猪 </a><span>|</span>
+                         <a href="">阿里云计算 </a><span>|</span>
+                         <a href="">AliOS </a><span>|</span>
+                         <a href="">阿里通信 </a><span>|</span>
+                         <a href="">万网 </a><span>|</span>
+                         <a href="">高德 </a><span>|</span>
+                         <a href="">UC </a><span>|</span>
+                         <a href="">友盟 </a><span>|</span>
+                         <a href="">虾米 </a><span>|</span>
+                         <a href="">钉钉 </a><span>|</span>
+                         <a href="">支付宝</a>
+                    </p>
+                    <div class="hr">
+                       <hr width="1192" size="1" color="gray" align="center">
+                     </div>
+                    <div class="ft-div">
+                         增值电信业务经营许可证:
+                         <a href="">浙B2-20110446</a>
+                         <span class="ft-sp1">市场名称登记证：工商网市字3301004119</span>
+                         <span class="ft-sp2">出版物网络平台服务经营备案证：新出发浙备字第001号</span>
+                         <br>
+                         <span class="ft-sp3">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                         <span class="ft-sp4">互联网药品信息服务资质证书：<a href="">浙-（经营性）-2017-0005</a></span>
+                         <span class="ft-sp5">
+                              <a href="">
+                                   <img src="../img/index_zhegongwanganbei.png" alt="">
+                                   浙公网安备 33010002000120号
+                              </a>
+                         </span>
+                         <br>
+                         <span class="ft-sp6">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                         <span class="ft-sp7">互联网药品交易服务资格证书：国A20150001</span>
+                         <br>
+                         <span class="ft-sp8">浙江省网络食品销售第三方平台提供者备案：浙网食33010002</span>
+                         <span class="ft-sp9"><a href="" class="jb-a">12318举报</a></span>
+                         <br>
+                         <span><b>© 2003-2019 TMALL.COM 版权所有</b></span>
+                         <p class="ft-p3">
+                              <a href="">
+                                   <img src="../img/index_zhejiang.gif" alt="">
+                                   <img src="../img/index_jingyingxukezheng.jpg" alt="">
+                              </a>
+                         </p>
+                    </div>
+               </div>
+          </footer>
+          <!-- footer 结束-->   
+     </div>
+    </body>
+</html>

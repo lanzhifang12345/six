@@ -1,0 +1,121 @@
+{
+  "id": "1422919",
+  "name": "web项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15369",
+      "name": "右三角形",
+      "font_class": "yousanjiaoxing",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "200846",
+      "name": "3.1旺旺",
+      "font_class": "31wangwang",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "202964",
+      "name": "全年包换",
+      "font_class": "quannianbaohuan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "204454",
+      "name": "service-送货入户",
+      "font_class": "servicesonghuoruhu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "204798",
+      "name": "service-指定物流",
+      "font_class": "servicezhidingwuliu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "204801",
+      "name": "service-按时发货",
+      "font_class": "serviceanshifahuo",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "204807",
+      "name": "service-上门安装",
+      "font_class": "serviceshangmenanzhuang",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "508247",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "567336",
+      "name": "修改",
+      "font_class": "xiugai",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "608317",
+      "name": "箭头",
+      "font_class": "jiantouarrow483",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "688122",
+      "name": "旺旺",
+      "font_class": "wangwang",
+      "unicode": "e79f",
+      "unicode_decimal": 59295
+    },
+    {
+      "icon_id": "689286",
+      "name": "时间 钟表",
+      "font_class": "shijianzhongbiao",
+      "unicode": "e810",
+      "unicode_decimal": 59408
+    },
+    {
+      "icon_id": "2967246",
+      "name": "品牌标识-阿里旺旺",
+      "font_class": "pinpaibiaoshi-aliwangwang",
+      "unicode": "e727",
+      "unicode_decimal": 59175
+    },
+    {
+      "icon_id": "7549352",
+      "name": "数据",
+      "font_class": "RectangleCopy",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "8341756",
+      "name": "箭头2_上",
+      "font_class": "jiantou_shang",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "8679363",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    }
+  ]
+}

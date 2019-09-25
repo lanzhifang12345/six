@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网-我的购物车</title>
+		<link rel="stylesheet" href="../css/car.css">
+		<link rel="stylesheet" href="../css/car_nav.css">
+		<link rel="stylesheet" href="../css/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../css/iconfont1/iconfont.css">
+		<link rel="stylesheet" href="../css/shopping_footer.css">
+		<script src="../css/iconfont1/iconfont.js"></script>
+		<script src="../js/car_index-lunbo.js"></script>
+	</head>
+	<body>
+		<!-- 顶部导航栏开始 -->
+    	<nav class="index-nav">
+    		<div class="nav-center">
+	    		<p class="p1"><a href="../index.html">首页</a></p>
+	    		<a href="">请登录</a>
+	    		<a href="">免费注册</a>
+	    		<ul class="index-uls" id="navuls">
+	    			<li class="tb">
+	    				<a href="" class="wdtb">我的淘宝</a>
+	    				<span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+	    			</li>
+	    			<li>
+	    				<a href="">
+	    					<span class="iconfont icon-gouwuche" id="gwc"></span>购物车0件
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="" class="scj">收藏夹</a>
+	    				<span class="iconfont icon-sanjiaoxing " id="sjx">&nbsp;&nbsp;&nbsp;|</span>
+	    			</li>
+	    			<li>
+	    				<span class="iconfont icon-shouji" id="sj"></span>
+	    				<a href="html/TmallPhoneVersion.html">手机版</a>
+	    			</li>
+	    			<li><a href="">淘宝网</a></li>
+	    			<li>
+	    				<a href="" class="sjzc">商家支持</a>
+	    				<span class="iconfont icon-sanjiaoxing " id="sjx"></span>
+	    			</li>
+	    			<li class="wzdh">
+	    				<p>
+	    					<span class="iconfont icon-shouqi1" id="sq"></span>网站导航
+	    				</p>
+	    			</li>
+	    		</ul>
+	    		<div class="nav-div" id="navdiv">
+	    			<div class="nav_div_1">
+	    				<li class="li_1"><a href="">已买到的宝贝</a></li>
+	    				<li><a href="">已卖出的宝贝</a></li>
+	    			</div>
+	    			<div></div>
+	    			<div class="nav_div_2">
+	    				<li class="li_2"><a href="">收藏的宝贝</a></li>
+	    				<li><a href="">收藏的店铺</a></li>
+	    			</div>
+	    			<div class="nav_div_3">
+	    				<div><img src="../img/shoujiban_erweima.png" alt=""></div>
+	    			</div>
+	    			<div></div>
+	    			<div class="nav_div_4">
+	    				<li class="li_4"><a href="">商家：</a></li>
+	    				<li>
+	    					<a href="">商家中心</a>
+	    					<a href="">天猫规则</a>
+	    				</li>
+	    				<li>
+	    					<a href="">商家入驻</a>
+	    					<a href="">运营服务</a>
+	    				</li>
+	    				<li>
+	    					<a href="">商家品控</a>
+	    					<a href="">商家工具</a>
+	    				</li>
+	    				<li>
+	    					<a href="">天猫智库</a>
+	    					<a href="">喵言喵语</a>
+	    				</li>
+	    				<li class="li_line">
+	    					.........................................
+	    				</li>
+	    				<li class="help">
+	    					<a href="">帮助：</a>
+	    				</li>
+	    				<li>
+	    					<a href="">帮助中心</a>
+	    					<a href="">问商友</a>
+	    				</li>
+	    				<li class="li_line">
+	    					.........................................
+	    				</li>
+	    			</div>
+	    			<div class="nav_div_5">
+	    				<div class="div_5_left">
+							<h2>热点推荐 Hot</h2>
+							<ul>
+								<li>天猫超市</li>
+								<li>喵鲜生</li>
+								<li>科技产品</li>
+								<li>女装新品</li>
+								<li>酷玩街</li>
+								<li>内衣新品</li>
+								<li>试美妆</li>
+								<li>运动新品</li>
+								<li>时尚先生</li>
+								<li>精明妈咪</li>
+								<li>吃乐会</li>
+								<li>企业采购</li>
+								<li>会员积分</li>
+								<li>天猫国际</li>
+								<li>品质频道</li>
+							</ul>
+	    				</div>
+	    				<div class="div_5_mid">
+	    					<h2>行业市场 Market</h2>
+	    					<ul>
+	    						<li>美妆</li>
+	    						<li>电器</li>
+	    						<li>女装</li>
+	    						<li>男装</li>
+	    						<li>女鞋</li>
+	    						<li>男鞋</li>
+	    						<li>内衣</li>
+	    						<li>箱包</li>
+	    						<li>运动</li>
+	    						<li>母婴</li>
+	    						<li>家装</li>
+	    						<li>医药</li>
+	    						<li>食品</li>
+	    						<li>配饰</li>
+	    						<li>汽车</li>
+	    					</ul>
+	    				</div>
+	    				<div class="div_5_right">
+	    					<h2>服务指南 Help</h2>
+	    					<ul>
+	    						<li>帮助中心</li>
+	    						<li>品质保障</li>
+	    						<li>特殊服务</li>
+	    						<li>7天退换货</li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    		</div>
+    		</div>
+    	</nav>
+    	<!-- 顶部导航栏结束 -->
+		<div class="shop_middle">
+			<div class="shop_navbar">
+				<div class="shop_navbar_navleft">
+					<h1><a class="h_tmall" href="" title="淘宝网 Taobao.com"><span>淘宝网 Taobao.com</span></a></h1>
+				</div>
+				<div class="shop_navbar_navright">
+					<div class="shop_navbar_search">
+						<div class="shop_navbar_search_box1">
+							<p>宝贝</p>
+							<span class="iconfont icon-jiantou"></span>
+						</div>
+						<input type="text" id="h_txt" class="h_txt">
+						<button id="h_btn" class="h_btn">搜索</button>
+					</div>
+				</div>
+			</div>
+			<div class="shop_tab">
+
+				<div class="shop_tab_box1" id="shop_tab_box1">
+					<ul id="uls">
+						<li class="shop_tab_box1_l1">全部商品<em>89</em><span class="tab_box1_s1">|</span></li>
+						<li>商品降价<em>5</em><span class="tab_box1_s2">|</span></li>
+						<li>库存紧张<em>0</em></li>
+					</ul>
+
+					<!-- <div class="shop_tab_box2" id="shop_tab_box2">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+					</div> -->
+				</div>
+				<div class="shop_tab_box2" id="shop_tab_box2">
+					<div class="shop_tab_box3">
+						<span class="shop_tab_box3_span1">合计（不含运费）：<em class="shop_tab_box3_em1">0.00</em></span>
+					</div>
+					<div class="shop_tab_box4">
+						<a href="#" class="shop_tab_box4_a1"><span class="shop_tab_box4_span1">结算</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="shop_tab2">
+				<div class="shop_tab2_box1">
+					<input type="checkbox" class="shop_tab2_input1"><label for=""></label>
+					<p class="shop_tab2_p1">全选</p>
+				</div>
+				<div class="shop_tab2_box2">
+					<p class="shop_tab2_p2">商品信息</p>
+				</div>
+				<div class="shop_tab2_box3">
+					<p class="shop_tab2_p3">单价</p>
+				</div>
+				<div class="shop_tab2_box4">
+					<p class="shop_tab2_p4">数量</p>
+				</div>
+				<div class="shop_tab2_box5">
+					<p class="shop_tab2_p5">金额</p>
+				</div>
+				<div class="shop_tab2_box6">
+					<p class="shop_tab2_p6">操作</p>
+				</div>
+			</div>
+			<div class="shop_info1">
+				<div class="car_checkbox1">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="car_shop_name"><span class="name_span1"></span>店铺：<a href="" class="name_a1">我龙数码配件旗舰</a>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pinpaibiaoshi-aliwangwang"></use>
+				</svg>
+				<span class="name_span2"><em>优惠券</em></span>
+				</div>	
+			</div>
+			<div class="shop_goods1">
+				<div class="car_checkbox2">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="goods_picture">
+					<a href=""><img src="../img/shopping_90.jpg" alt="" class="goods_img1"></a>
+				</div>
+				<div class="goods_file">
+					<div class="goods_top">
+						<a href="">oppoa59s钢化水凝膜oppoa57钢化膜a59m全屏a59覆盖抗蓝光</a>
+					</div>
+					<div class="goods_down">
+						<span class="goods_down_span1"><img src="../img/shopping_120.png" alt="" class="goods_down_img1"></span>
+						<a href="#"><img src="../img/shopping_114.jpg" alt="" class="goods_down_img2"></a>
+						<a href="#"><img src="../img/shopping_112.png" alt="" class="goods_down_img3"></a>
+					</div>
+				</div>
+				<div class="goods_mid">
+					<svg class="icon1" aria-hidden="true">
+					  <use xlink:href="#icon-xiugai"></use>
+					</svg>
+					<p class="goods_p1">颜色分类：A59/A59s/A59m 混合装【1蓝光+1超清*无白边】2片☆送后膜+神器</p>
+				</div>
+				<div class="goods_mid_price">
+					<del>￥50.00</del>
+					<p>￥27.90</p>
+				</div>
+				<div class="goods_mid_num">	
+					<a href="" class="mid_a1">-</a><input type="text"><a href="" class="mid_a2">+</a>
+				</div>
+				<div class="goods_mid_total_price">￥27.90</div>
+				<div class="goods_mid_right">
+					<a href="" class="mid_right_a1">移入收藏夹</a>
+					<a href="" class="mid_right_a2">删除</a>
+					<div class="goods_mid_similarity">
+						<a href="" class="mid_right_a3">相似宝贝</a>
+						<span class="iconfont icon-jiantou"></span>
+					</div>
+				</div>
+			</div>
+			<div class="shop_info1">
+				<div class="car_checkbox1">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="car_shop_name"><span class="name_span1"></span>店铺：<a href="" class="name_a1">我龙数码配件旗舰</a>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pinpaibiaoshi-aliwangwang"></use>
+				</svg>
+				<span class="name_span2"><em>优惠券</em></span>
+				</div>	
+			</div>
+			<div class="shop_goods1">
+				<div class="car_checkbox2">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="goods_picture">
+					<a href=""><img src="../img/shopping_90.jpg" alt="" class="goods_img1"></a>
+				</div>
+				<div class="goods_file">
+					<div class="goods_top">
+						<a href="">oppoa59s钢化水凝膜oppoa57钢化膜a59m全屏a59覆盖抗蓝光</a>
+					</div>
+					<div class="goods_down">
+						<span class="goods_down_span1"><img src="../img/shopping_120.png" alt="" class="goods_down_img1"></span>
+						<a href="#"><img src="../img/shopping_114.jpg" alt="" class="goods_down_img2"></a>
+						<a href="#"><img src="../img/shopping_112.png" alt="" class="goods_down_img3"></a>
+					</div>
+				</div>
+				<div class="goods_mid">
+					<svg class="icon1" aria-hidden="true">
+					  <use xlink:href="#icon-xiugai"></use>
+					</svg>
+					<p class="goods_p1">颜色分类：A59/A59s/A59m 混合装【1蓝光+1超清*无白边】2片☆送后膜+神器</p>
+				</div>
+				<div class="goods_mid_price">
+					<del>￥50.00</del>
+					<p>￥27.90</p>
+				</div>
+				<div class="goods_mid_num">	
+					<a href="" class="mid_a1">-</a><input type="text"><a href="" class="mid_a2">+</a>
+				</div>
+				<div class="goods_mid_total_price">￥27.90</div>
+				<div class="goods_mid_right">
+					<a href="" class="mid_right_a1">移入收藏夹</a>
+					<a href="" class="mid_right_a2">删除</a>
+					<div class="goods_mid_similarity">
+						<a href="" class="mid_right_a3">相似宝贝</a>
+						<span class="iconfont icon-jiantou"></span>
+					</div>
+				</div>
+			</div>
+			<div class="shop_info1">
+				<div class="car_checkbox1">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="car_shop_name"><span class="name_span1"></span>店铺：<a href="" class="name_a1">我龙数码配件旗舰</a>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pinpaibiaoshi-aliwangwang"></use>
+				</svg>
+				<span class="name_span2"><em>优惠券</em></span>
+				</div>	
+			</div>
+			<div class="shop_goods1">
+				<div class="car_checkbox2">
+					<input type="checkbox"><label for=""></label>
+				</div>
+				<div class="goods_picture">
+					<a href=""><img src="../img/shopping_90.jpg" alt="" class="goods_img1"></a>
+				</div>
+				<div class="goods_file">
+					<div class="goods_top">
+						<a href="">oppoa59s钢化水凝膜oppoa57钢化膜a59m全屏a59覆盖抗蓝光</a>
+					</div>
+					<div class="goods_down">
+						<span class="goods_down_span1"><img src="../img/shopping_120.png" alt="" class="goods_down_img1"></span>
+						<a href="#"><img src="../img/shopping_114.jpg" alt="" class="goods_down_img2"></a>
+						<a href="#"><img src="../img/shopping_112.png" alt="" class="goods_down_img3"></a>
+					</div>
+				</div>
+				<div class="goods_mid">
+					<svg class="icon1" aria-hidden="true">
+					  <use xlink:href="#icon-xiugai"></use>
+					</svg>
+					<p class="goods_p1">颜色分类：A59/A59s/A59m 混合装【1蓝光+1超清*无白边】2片☆送后膜+神器</p>
+				</div>
+				<div class="goods_mid_price">
+					<del>￥50.00</del>
+					<p>￥27.90</p>
+				</div>
+				<div class="goods_mid_num">	
+					<a href="" class="mid_a1">-</a><input type="text"><a href="" class="mid_a2">+</a>
+				</div>
+				<div class="goods_mid_total_price">￥27.90</div>
+				<div class="goods_mid_right">
+					<a href="" class="mid_right_a1">移入收藏夹</a>
+					<a href="" class="mid_right_a2">删除</a>
+					<div class="goods_mid_similarity">
+						<a href="" class="mid_right_a3">相似宝贝</a>
+						<span class="iconfont icon-jiantou"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="shop_info2">
+				<div class="car_shop_name2"><span class="name_span3"></span>店铺：<a href="" class="name_a3">我龙数码配件旗舰</a>
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pinpaibiaoshi-aliwangwang"></use>
+				</svg>
+				<span class="name_span4"><em>优惠券</em></span>
+				</div>	
+			</div>
+			<div class="shop_goods2">
+				<div class="car_checkbox3">
+					<a href="" class="goods2_a1">失效</a>
+				</div>
+				<div class="goods2_picture">
+					<a href="" class="goods_a2"><img src="../img/shopping_90.jpg" alt="" class="goods2_img1"></a>
+				</div>
+				<div class="goods2_file">
+					<div class="goods2_top">
+						<a href="">oppoa59s钢化水凝膜oppoa57钢化膜a59m全屏a59覆盖抗蓝光</a>
+					</div>
+					<div class="goods2_down">
+						<span class="goods2_down_span1"><img src="../img/shopping_120.png" alt="" class="goods2_down_img1"></span>
+						<a href="#"><img src="../img/shopping_114.jpg" alt="" class="goods2_down_img2"></a>
+						<a href="#"><img src="../img/shopping_112.png" alt="" class="goods2_down_img3"></a>
+					</div>
+				</div>
+				<div class="goods2_mid">
+					<svg class="icon1" aria-hidden="true">
+					  <use xlink:href="#icon-xiugai"></use>
+					</svg>
+					<p class="goods2_p1">颜色分类：A59/A59s/A59m 混合装【1蓝光+1超清*无白边】2片☆送后膜+神器</p>
+				</div>
+				<div class="goods2_mid_price">
+					<del>￥50.00</del>
+					<p>￥27.90</p>
+				</div>
+				<div class="goods2_mid_num">	
+					<a href="" class="mid2_a1">-</a><input type="text"><a href="" class="mid2_a2">+</a>
+				</div>
+				<div class="goods2_mid_total_price">￥27.90</div>
+				<div class="goods2_mid_right">
+					<a href="" class="mid2_right_a1">移入收藏夹</a>
+					<a href="" class="mid2_right_a2">删除</a>
+					<div class="goods2_mid_similarity">
+						<a href="" class="mid2_right_a3">相似宝贝</a>
+						<span class="iconfont icon-jiantou"></span>
+					</div>
+				</div>
+				<div class="mid_invalid">
+					<div class="mid_invalid_box1">
+						<input type="checkbox" class="invalid_input1"><label for="" class="invalid_label1"></label>
+						<p class="invalid_p1">全选</p>
+					</div>
+					<div class="invalid_box2">
+						<a href="" class="invalid_box2_a1">删除</a>
+						<a href="" class="invalid_box2_a2">清除失效宝贝</a>
+						<a href="" class="invalid_box2_a3">移入收藏夹</a>
+						<a href="" class="invalid_box2_a4">分享</a>
+					</div>
+					<div class="mid_invalid_box3">
+						<span class="invalid_box3_span1">已选商品<em>&nbsp;0&nbsp;</em>件</span>
+						<span class="invalid_box3_span2"></span>
+					</div>
+					<div class="mid_invalid_box4">
+						<span class="invalid_box4_span1">合计（不含运费）：<em class="invalid_box4_em1">0.00</em></span>
+					</div>
+					<div class="mid_invalid_box5">
+						<a href="#" class="invalid_box5_a1"><span class="invalid_box5_span1">结算</span></a>
+					</div>
+				</div>
+				<div class="shop_tab3">
+					<div class="shop_tab3_box1" id="shop_tab3_box1">
+						<ul id="tab3_uls">
+							<li>掌柜热卖<em>89</em><span class="tab3_box1_s1">|</span></li>
+							<li>最近浏览过的<em>5</em><span class="tab3_box1_s2">|</span></li>
+							<li>猜你喜欢的<em>0</em></li>
+						</ul>
+					</div>
+				</div>
+				<div class="shop_slideshow">
+					<ul>
+						<li>
+							<img src="../img/shopping_56.jpg" alt="">
+							<span>聚名品</span>
+							<!-- <p class="juhuasuan_m1_p">正品包邮</p>
+							<p class="juhuasuan_m2_p">
+							<img src="../img/juhuasuan_06.jpg" alt="" class="juhuasuan_m2_img">【国内速达】菲诗小铺黑杆大肚子睫毛膏浓密纤长
+							</p> -->
+							<!-- <p class="juhuasuan_m3_p">
+								<i class="juhuasuan_m3_i">￥</i>
+								<em class="juhuasuan_m3_em1">2399</em>
+								<del>￥5499<br>
+								<em class="juhuasuan_m3_em2">4人想买</em>
+								</del>
+								<span class="juhuasuan_m3_span1">买贵赔</span>
+								
+								<span class="juhuasuan_m3_span2"><em class="juhuasuan_m3_em4">即将</em><em class="juhuasuan_m3_em5">开始</em></span>
+							</p> -->
+						</li>
+						<li>
+							<img src="../img/shopping_56.jpg" alt="">
+							<span>聚名品</span>
+						</li>
+						<li>
+							<img src="../img/shopping_56.jpg" alt="">
+							<span>聚名品</span>
+						</li>
+						<li>
+							<img src="../img/shopping_56.jpg" alt="">
+							<span>聚名品</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="shop_foolter">
+			<!-- footer 开始 -->
+	    	<footer class="index-footer">
+	    		<div class="ft_div_hr">
+	    			<hr class="ft_hr" width="1190" color='#c1c1c1' size="1" align="">
+	    		</div>
+	    		
+	    		<div class="footer-center">
+		    		<p class="ft-p1">
+		    			<a href="">阿里巴巴集团&nbsp;</a><span>|</span>
+		    			<a href="">淘宝网&nbsp;</a><span>|</span>
+		    			<a href="">天猫&nbsp;</a><span>|</span>
+		    			<a href="">聚划算&nbsp;</a><span>|</span>
+		    			<a href="">全球速卖通&nbsp;</a><span>|</span>
+		    			<a href="">阿里巴巴国际交易市场&nbsp;</a><span>|</span>
+		    			<a href="">1688&nbsp;</a><span>|</span>
+		    			<a href="">阿里妈妈&nbsp;</a><span>|</span>
+		    			<a href="">飞猪&nbsp;</a><span>|</span>
+		    			<a href="">阿里云计算&nbsp;</a><span>|</span>
+		    			<a href="">AliOS&nbsp;</a><span>|</span>
+		    			<a href="">阿里通信&nbsp;</a><span>|</span>
+		    			<a href="">一淘&nbsp;</a><span>|</span>
+		    			<a href="">万网&nbsp;</a><span>|</span>
+		    			<a href="">高德&nbsp;</a><span>|</span>
+		    			<a href="">UC&nbsp;</a><span>|</span>
+		    			<a href="">友盟&nbsp;</a>
+		    		</p>
+		    		<p class="ft-p2">
+		    			<a href="">虾米&nbsp;</a><span>|</span>
+		    			<a href="">大麦网&nbsp;</a><span>|</span>
+		    			<a href="">钉钉&nbsp;</a><span>|</span>
+		    			<a href="">支付宝&nbsp;</a><span>|</span>
+		    			<a href="">优酷&nbsp;</a><span>|</span>
+		    			<a href="">土豆&nbsp;</a><span>|</span>
+		    			<a href="">阿里健康&nbsp;</a><span>|</span>
+		    			<a href="">阿里影业&nbsp;</a><span>|</span>
+		    			<a href="">阿里体育&nbsp;</a><span>|</span>
+		    			<a href="">网商银行</a>
+		    		</p>
+		    		<div class="ft_div_hr">
+		    			<hr class="ft_hr" width="1190" color='#c1c1c1' size="1" align="">
+		    		</div>
+		    		<p class="ft-p4">
+		    			<a href="">关于淘宝&nbsp;</a>
+		    			<a href="">合作伙伴&nbsp;</a>
+		    			<a href="">营销中心&nbsp;</a>
+		    			<a href="">廉政举报&nbsp;</a>
+		    			<a href="">联系客服&nbsp;</a>
+		    			<a href="">开放平台&nbsp;</a>
+		    			<a href="">诚征英才&nbsp;</a>
+		    			<a href="">联系我们&nbsp;</a>
+		    			<a href="">网站地图&nbsp;</a>
+		    			<a href="">隐私权政策&nbsp;</a>
+		    			<a href="">法律声明&nbsp;</a>
+		    			<a href="">知识产权&nbsp;</a><span>|</span>
+		    			<span><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2003-现在&nbsp;Taobao.com&nbsp;版权所有</b></span>
+		    		</p>
+		    		<div class="ft-div">
+		    			增值电信业务经营许可证:
+		    			<a href="">浙B2-20110446</a>
+		    			<span class="ft-sp1">市场名称登记证：工商网市字3301004119</span>
+		    			<span class="ft-sp2">出版物网络平台服务经营备案证：新出发浙备字第001号</span>
+		    			<br>
+		    			<span class="ft-sp3">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+		    			<span class="ft-sp4">互联网药品信息服务资质证书：<a href="">浙-（经营性）-2017-0005</a></span>
+		    			<span class="ft-sp5">
+		    				<a href="">
+		    					<img src="../img/index_zhegongwanganbei.png" alt="">
+		    					浙公网安备 33010002000120号
+		    				</a>
+		    			</span>
+		    			<br>
+		    			<span class="ft-sp6">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+		    			<span class="ft-sp7">互联网药品交易服务资格证书：国A20150001</span>
+		    			<br>
+		    			<span class="ft-sp8">浙江省网络食品销售第三方平台提供者备案：浙网食33010002</span>
+		    			<span class="ft-sp9"><a href="" class="jb-a">12318举报</a></span>
+		    			<br>
+		    			<span><b>© 2003-2019 TMALL.COM 版权所有</b></span>
+		    			<p class="ft-p3">
+		    				<a href="">
+		    					<img src="../img/index_zhejiang.gif" alt="">
+		    					<img src="../img/index_jingyingxukezheng.jpg" alt="">
+		    				</a>
+		    			</p>
+		    		</div>
+	    		</div>
+	    	</footer>
+	    	<!-- footer 结束-->
+		</div>
+	</body>
+</html>
